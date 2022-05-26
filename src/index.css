@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family: "Mont-Bold";
+  src: url('./assets/fonts/Montserrat-ExtraBold.ttf');   
+}
+
+@font-face{
+  font-family: "Mont-Medium";
+  src: url('./assets/fonts/Montserrat-Medium.ttf');   
+}
+
+@font-face{
+  font-family: "Mont-Regular";
+  src: url('./assets/fonts/Montserrat-Regular.ttf');   
+}
+
+
+.Mont-Bold{
+  font-family: "Mont-Bold";
+}
+
+.Mont-Medium{
+  font-family: "Mont-Medium";
+}
+
+.Mont-Regular{
+  font-family: "Mont-Regular";
+}
+
+@layer components{
+
+  /* TODO: COMPONENTE LoginPage */
+
+  .nav-active{
+      @apply bg-gray-200 text-gray-900 Mont-Bold text-sm flex items-center px-2 py-2 font-medium rounded-md ;
+  }
+
+  .nav-inactive{
+    @apply text-gray-600 hover:bg-gray-50 hover:text-gray-900 Mont-Bold text-sm flex items-center px-2 py-2 font-medium rounded-md transition duration-300;
+  }   
+
+
+}
